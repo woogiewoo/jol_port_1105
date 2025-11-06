@@ -156,17 +156,18 @@
         }
 
         .filter-item {
-            font-family: var(--f-display);
+            font-family: var(--f-primary); /* 메뉴바와 동일한 폰트로 변경 */
             text-decoration: none;
             color: var(--c-text-secondary);
-            font-size: 2rem;
+            font-size: 1.8rem; /* 폰트 변경에 맞춰 크기 조정 */
+            font-weight: 500; /* 폰트 두께 추가 */
             padding: 8px 16px;
             border-radius: 0;
             outline: none;
             border: none;
             background: none;
             cursor: pointer;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.05rem; /* 자간 조정 */
             transition: all 0.3s ease;
             position: relative;
         }
@@ -199,7 +200,7 @@
         .profile-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 60px 50px;
+            gap: 80px 66px; /* 상하/좌우 마진을 추가로 증가 */
             position: relative;
         }
 
@@ -304,9 +305,10 @@
             /* 이전 이메일 링크와 유사한 스타일을 유지하되, hover 효과는 제거 */
         }
 
-        .profile-contact-link {
-            /* 이 클래스는 더 이상 사용되지 않지만, 만약을 위해 남겨둡니다. */
-        }
+        /* 이 클래스는 더 이상 사용되지 않지만, 만약을 위해 남겨둡니다. */
+        /* .profile-contact-link {
+            
+        } */
 
         /* Empty State */
         .empty-state {
@@ -351,7 +353,7 @@
         @media (max-width: 1200px) {
             .profile-grid { 
                 grid-template-columns: repeat(3, 1fr);
-                gap: 50px 40px;
+                gap: 66px 54px; /* 상하/좌우 마진을 추가로 증가 */
             }
         }
 
@@ -362,10 +364,10 @@
             .site-header nav a { font-size: 0.9rem; padding: 6px 12px; }
             .container { padding: 0 20px; }
             .filter-section { top: 61px; padding: 20px 0; }
-            .filter-item { font-size: 1.5rem; padding: 6px 12px; }
+            .filter-item { font-size: 1rem; padding: 6px 12px; }
             .profile-section { padding: 60px 0 80px; }
             .profile-grid { 
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* 1열로 변경 */
                 gap: 40px;
             }
             .profile-section::before { display: none; }
@@ -378,7 +380,7 @@
         }
 
         @media (max-width: 480px) {
-            .filter-item { font-size: 1.3rem; }
+            .filter-item { font-size: 0.9rem; }
         }
     </style>
 </head>
